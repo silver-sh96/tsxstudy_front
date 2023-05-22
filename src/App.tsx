@@ -1,10 +1,19 @@
 import React from 'react';
+import 'react-router';
+import NoticeList from './pages/NoticeList';
+import NoticeWrite from './pages/NoticeWrite';
+import Header from './fragment/Header';
+import { Route, Routes } from 'react-router-dom';
 
-function App() {
+function App(): JSX.Element {
   return (
-    <div className="App">
-      ㅇㅇ아르르르
-    </div>
+    <>
+      <Header/>
+      <Routes>
+        <Route path='/' element={<NoticeList/>}/>
+        <Route path='/write' element={<NoticeWrite/>}/>
+      </Routes>
+    </>
   );
 }
 
