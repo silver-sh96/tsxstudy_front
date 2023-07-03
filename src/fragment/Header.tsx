@@ -6,10 +6,10 @@ const Header = () => {
     return (
         <div style={{padding:"20px 0px 0px 20px"}}>
             <Link to={'/'}>
-                <Button variant="primary" style={{marginRight:"5px"}}>목록</Button>
+                <Button variant="primary" style={{marginRight:"5px"}}>게시글 목록</Button>
             </Link>
             <Link to={'/write'}>
-                <Button variant="primary">작성</Button>
+                <Button variant="primary">게시글 작성</Button>
             </Link>
         </div>
     );
